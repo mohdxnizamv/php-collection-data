@@ -21,41 +21,39 @@ $mahasiswa = $rows;
 <html lang="en">
 
 <head>
-  <link rel="stylesheet" href="app/css/style.css">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Honor Protocol Complain</title>
+    <link rel="stylesheet" href="app/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honor Protocol Complain</title>
 </head>
 
 <body class="font-Inter">
-<section class="container mx-auto max-w-7xl py-6 sm:text-xs md:text-xs lg:text-sm xl:text-base">
-  <h3 class="text-xl font-Vampiro">Honor Protocol Complain</h3>
+    <section class="container mx-auto max-w-7xl py-6 sm:text-xs md:text-xs lg:text-sm xl:text-base">
 
-  <a href="tambah.php">Next | Page</a>
+        <h3 class="text-xl font-Vampiro">Honor Protocol Complain</h3>
 
-  <table border="1" cellpadding="10" cellspacing="0">
-    <tr class="font-bold font-Vampiro">
-      <th>ID</th>
-      <th>UserName</th>
-      <th>NFT ID</th>
-      <th>Rujukan</th>
-    </tr>
+        <a href="tambah.php">Next | Page</a>
 
-    <?php $i = 1;
+        <table border="1" cellpadding="10" cellspacing="0">
+            <tr class="font-bold font-Vampiro">
+                <th>ID</th>
+                <th>UserName</th>
+                <th>NFT ID</th>
+                <th>Rujukan</th>
+            </tr>
+
+            <?php $i = 1;
     foreach ($mahasiswa as $m) : ?>
-      <tr>
-        <td><?= $i++; ?></td>
-        <td><?= $m['username']; ?></td>
-        <td><?= $m['idnft']; ?></td>
-        <td><?= $m['example']; ?></td>
-        <!-- <td>
-          <a href="">ubah</a> | <a href="">hapus</a>
-        </td> -->
-      </tr>
-    <?php endforeach; ?>
-  </table>
-</section>
-<!--  -->
+            <tr>
+                <td><?= $i++; ?></td>
+                <td><?= $m['username']; ?></td>
+                <td><?= $m['idnft']; ?></td>
+                <td><?= $m['example']; ?></td>
+            </tr>
+            <?php endforeach; ?>
+        </table>
+    </section>
+
 
 </body>
 

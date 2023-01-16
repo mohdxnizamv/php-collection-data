@@ -549,59 +549,6 @@ video {
   }
 }
 
-.btn{
-  position: relative;
-  border-radius: 1.5rem;
-  background-image: linear-gradient(to left, var(--tw-gradient-stops));
-  --tw-gradient-from: #2563eb;
-  --tw-gradient-to: rgb(37 99 235 / 0);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-  --tw-gradient-to: #7e22ce;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  text-align: center;
-  text-transform: capitalize;
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.btn:hover{
-  background-image: linear-gradient(to right, var(--tw-gradient-stops));
-  font-weight: 600;
-  --tw-text-opacity: 1;
-  color: rgb(250 204 21 / var(--tw-text-opacity));
-}
-
-@media (min-width: 360px){
-  .btn{
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-}
-
-@media (min-width: 760px){
-  .btn{
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-}
-
-@media (min-width: 1280px){
-  .btn{
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-}
-
-@media (min-width: 1440px){
-  .btn{
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-}
-
 .btn2{
   position: relative;
   top: -0.25rem;
