@@ -26,6 +26,6 @@
     @apply w-56 rounded-lg border-none py-1.5 px-3 text-xs text-black placeholder-gray-500 ring-1 ring-gray-300 focus:ring-2 focus:ring-gray-500;
   }
   .datainput2 {
-    @apply w-56 rounded-lg border-none py-10 px-3 text-xs text-black placeholder-gray-500 ring-1 ring-gray-300 focus:ring-2 focus:ring-gray-500;
+    @apply w-full rounded-md border border-gray-300 p-6 placeholder:font-sans placeholder:font-light;
   }
 }

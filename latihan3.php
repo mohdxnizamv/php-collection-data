@@ -14,7 +14,7 @@ $mahasiswa = query("SELECT * FROM mahasiswa");
 
 <body class="font-Poppins bg-gray-900 text-white">
     <section class="container mx-auto max-w-3xl py-6 sm:text-xs md:text-xs lg:text-sm xl:text-base">
-        <h3 class="text-xl font-Vampiro">Daftar Customer User</h3>
+        <h3 class="text-4xl font-Vampiro">Daftar Customer User</h3>
 
         <!-- <a href="tambah.php">Tambah Data Customer User</a> -->
         <br />

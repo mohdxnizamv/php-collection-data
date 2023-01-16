@@ -30,9 +30,7 @@ $mahasiswa = $rows;
 <body class="font-Poppins bg-gray-900 text-white">
     <section class="container mx-auto max-w-7xl py-6 sm:text-xs md:text-xs lg:text-sm xl:text-base">
 
-        <h3 class="text-xl font-Vampiro">Honor Protocol Complain</h3>
-
-        <a href="tambah.php">Next | Page</a>
+        <h3 class="text-4xl font-Vampiro">Contoh Customer Complain</h3>
 
         <table border="1" cellpadding="10" cellspacing="0">
             <tr class="font-bold font-Vampiro">
@@ -52,7 +50,14 @@ $mahasiswa = $rows;
             </tr>
             <?php endforeach; ?>
         </table>
+
+        <div class="text-center p-10">
+            <a href="tambah.php"
+                class="items-center justify-center hover:font-bold font-Vampiro px-9 space-x-3 rounded border border-gray-300 py-2 shadow-sm transition duration-150 hover:-translate-y-0.5 hover:bg-opacity-30 hover:shadow-lg">Next
+                Page</a>
+        </div>
     </section>
+
 
 
 </body>
