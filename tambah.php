@@ -24,14 +24,14 @@ if (isset($_POST['tambah'])) {
     <title>Tambah Honor Protocol Complain</title>
 </head>
 
-<body class="font-Inter">
+<body class="font-Poppins bg-gray-900 text-white">
     <section class="container mx-auto max-w-lg py-6 sm:px-6 xl:px-8">
         <h3 class="text-xl font-Vampiro">Customer Complain</h3>
         <form action="" method="POST">
             <ul>
                 <li class="pb-6">
                     <label>
-                        UserName :
+                        User Name :
                         <input type="text" name="username" class="datainput" autofocus required>
                     </label>
                 </li>

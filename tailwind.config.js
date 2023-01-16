@@ -11,7 +11,7 @@ module.exports = {
     extend: {
       fontFamily: {
         Vampiro: ["Vampiro One", "cursive"],
-        Inter: ["Inter", "sans-serif"],
+        Poppins: ["Poppins", "sans-serif"],
       },
       colors: {
         softYellow: "#FFDE00",

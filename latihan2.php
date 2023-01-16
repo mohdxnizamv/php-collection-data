@@ -12,7 +12,7 @@ $mahasiswa = query("SELECT * FROM mahasiswa");
     <title>Daftar Honor Protocol</title>
 </head>
 
-<body class="font-Inter">
+<body class="font-Poppins bg-gray-900 text-white">
     <section class="container mx-auto max-w-7xl py-6 sm:text-xs md:text-xs lg:text-sm xl:text-base">
 
         <h3 class="text-xl font-Vampiro">Daftar Honor Protocol</h3>

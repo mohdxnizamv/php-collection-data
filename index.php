@@ -27,7 +27,7 @@ $mahasiswa = $rows;
     <title>Honor Protocol Complain</title>
 </head>
 
-<body class="font-Inter">
+<body class="font-Poppins bg-gray-900 text-white">
     <section class="container mx-auto max-w-7xl py-6 sm:text-xs md:text-xs lg:text-sm xl:text-base">
 
         <h3 class="text-xl font-Vampiro">Honor Protocol Complain</h3>
@@ -38,8 +38,8 @@ $mahasiswa = $rows;
             <tr class="font-bold font-Vampiro">
                 <th>ID</th>
                 <th>UserName</th>
-                <th>NFT ID</th>
                 <th>Rujukan</th>
+                <th>NFT ID</th>
             </tr>
 
             <?php $i = 1;
@@ -47,8 +47,8 @@ $mahasiswa = $rows;
             <tr>
                 <td><?= $i++; ?></td>
                 <td><?= $m['username']; ?></td>
-                <td><?= $m['idnft']; ?></td>
                 <td><?= $m['example']; ?></td>
+                <td class="text-center"><?= $m['idnft']; ?></td>
             </tr>
             <?php endforeach; ?>
         </table>

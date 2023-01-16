@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
 @import url("https://fonts.googleapis.com/css2?family=Vampiro+One&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap");
@@ -697,8 +699,17 @@ video {
   max-width: 32rem;
 }
 
+.max-w-3xl{
+  max-width: 48rem;
+}
+
 .border{
   border-width: 1px;
+}
+
+.bg-gray-900{
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
 
 .py-6{
@@ -710,12 +721,16 @@ video {
   padding-bottom: 1.5rem;
 }
 
-.font-Inter{
-  font-family: Inter, sans-serif;
+.text-center{
+  text-align: center;
 }
 
 .font-Vampiro{
   font-family: Vampiro One, cursive;
+}
+
+.font-Poppins{
+  font-family: Poppins, sans-serif;
 }
 
 .text-xl{
@@ -725,6 +740,15 @@ video {
 
 .font-bold{
   font-weight: 700;
+}
+
+.italic{
+  font-style: italic;
+}
+
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 @media (min-width: 360px){

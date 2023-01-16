@@ -12,8 +12,8 @@ $mahasiswa = query("SELECT * FROM mahasiswa");
     <title>Daftar Customer User</title>
 </head>
 
-<body class="font-Inter">
-    <section class="container mx-auto max-w-lg py-6 sm:text-xs md:text-xs lg:text-sm xl:text-base">
+<body class="font-Poppins bg-gray-900 text-white">
+    <section class="container mx-auto max-w-3xl py-6 sm:text-xs md:text-xs lg:text-sm xl:text-base">
         <h3 class="text-xl font-Vampiro">Daftar Customer User</h3>
 
         <!-- <a href="tambah.php">Tambah Data Customer User</a> -->
@@ -24,7 +24,6 @@ $mahasiswa = query("SELECT * FROM mahasiswa");
                 <th>ID</th>
                 <th>UserName</th>
                 <th>Wallet Address</th>
-                <th>NFT ID</th>
             </tr>
 
             <?php $i = 1;
@@ -33,9 +32,8 @@ $mahasiswa = query("SELECT * FROM mahasiswa");
                 <td><?= $i++; ?></td>
                 <td><?= $m['username']; ?></td>
                 <td><?= $m['address']; ?></td>
-                <!-- <td><?= $m['idnft']; ?></td> -->
                 <td>
-                    <a href="detail.php?id=<?= $m['id']; ?>"><strong> detail </strong></a>
+                    <a href="detail.php?id=<?= $m['id']; ?>"><strong> click detail </strong></a>
                 </td>
             </tr>
             <?php endforeach; ?>

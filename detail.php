@@ -17,7 +17,7 @@ $m = query("SELECT * FROM mahasiswa WHERE id = $id");
     <title>Detail Customer</title>
 </head>
 
-<body class="font-Inter">
+<body class="font-Poppins bg-gray-900 text-white">
     <section class="container mx-auto max-w-xl py-6 sm:px-6 xl:px-8">
         <h3 class="text-xl font-Vampiro">Detail Customer</h3>
         <ul>
