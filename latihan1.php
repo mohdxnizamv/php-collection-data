@@ -1,6 +1,6 @@
 <?php
 // Koneksi ke DB & Pilih Database
-$conn = mysqli_connect('localhost', 'root', '', 'pw_20230113');
+$conn = mysqli_connect('localhost', 'root', 'root', 'pw_20230113');
 
 // Query isi tabel mahasiswa
 $result = mysqli_query($conn, "SELECT * FROM mahasiswa");
@@ -21,7 +21,7 @@ $mahasiswa = $rows;
 <html lang="en">
 
 <head>
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./app/css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,10 +40,10 @@ $mahasiswa = $rows;
 <body class="font-Josefin text-white">
     <section class="container mx-auto max-w-7xl py-6 sm:text-xs md:text-xs lg:text-sm xl:text-base">
 
-        <h3 class="text-4xl font-Vampiro text-center">Contoh Customer Complain</h3>
+        <h3 class="text-4xl font-Vampiro text-center underline">Contoh Customer Complain</h3>
 
         <table border="1" cellpadding="10" cellspacing="0">
-            <tr class="font-bold text-2xl font-Vampiro">
+            <tr class="font-bold text-xl font-Vampiro">
                 <th>ID</th>
                 <th>User Name</th>
                 <th>Rujukan</th>
