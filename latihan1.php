@@ -22,12 +22,13 @@ $mahasiswa = $rows;
 
 <head>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./app/css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
     body {
-        background-image: url(./svg/rainbow-vortex.svg);
+        background-image: url(./svg/Sprinkle.svg);
         background-repeat: repeat;
         background-size: cover;
     }
@@ -44,9 +45,8 @@ $mahasiswa = $rows;
         <table border="1" cellpadding="10" cellspacing="0">
             <tr class="font-bold font-Vampiro">
                 <th>ID</th>
-                <th>UserName</th>
+                <th>User Name</th>
                 <th>Rujukan</th>
-                <th>NFT ID</th>
             </tr>
 
             <?php $i = 1;
@@ -55,7 +55,6 @@ $mahasiswa = $rows;
                 <td><?= $i++; ?></td>
                 <td><?= $m['username']; ?></td>
                 <td><?= $m['example']; ?></td>
-                <td class="text-center"><?= $m['idnft']; ?></td>
             </tr>
             <?php endforeach; ?>
         </table>

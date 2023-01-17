@@ -7,13 +7,14 @@ $mahasiswa = query("SELECT * FROM mahasiswa");
 
 <head>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./app/css/style.css">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <style>
     body {
-        background-image: url(./svg/rainbow-vortex.svg);
+        background-image: url(./svg/Sprinkle.svg);
         background-repeat: repeat;
         background-size: cover;
     }
@@ -40,10 +41,6 @@ $mahasiswa = query("SELECT * FROM mahasiswa");
                                 </th>
                                 <th scope="col"
                                     class="border-b border-gray-200 px-5 py-3 text-left text-base font-bold uppercase text-gray-500">
-                                    Wallet Address
-                                </th>
-                                <th scope="col"
-                                    class="border-b border-gray-200 px-5 py-3 text-left text-base font-bold uppercase text-gray-500">
                                     Status
                                 </th>
                             </tr>
@@ -56,7 +53,6 @@ $mahasiswa = query("SELECT * FROM mahasiswa");
                         <tr class="text-gray-400">
                             <td class="text-center"><?= $i++; ?></td>
                             <td><?= $m['username']; ?></td>
-                            <td><?= $m['address']; ?></td>
                             <td>
                                 <a href="detail.php?id=<?= $m['id']; ?>"
                                     class="relative rounded-xl bg-gradient-to-l from-transparent to-neutral-50 px-3 py-1 text-center capitalize text-white hover:bg-gradient-to-r hover:font-semibold hover:text-black sm:text-base md:text-base lg:text-base xl:text-base">

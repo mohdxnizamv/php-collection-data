@@ -19,12 +19,13 @@ if (isset($_POST['tambah'])) {
 
 <head>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./app/css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
     body {
-        background-image: url(./svg/rainbow-vortex.svg);
+        background-image: url(./svg/Sprinkle.svg);
         background-repeat: repeat;
         background-size: cover;
     }
@@ -68,7 +69,7 @@ if (isset($_POST['tambah'])) {
                         <label class="text-gray-700" for="name">
                             <textarea
                                 class="flex-1 w-full px-4 py-2 text-base text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
-                                placeholder="Enter your comment" name="example" rows="5" cols="40" maxlength="500">
+                                name="example" rows="5" cols="40" maxlength="500">
                             </textarea>
                         </label>
                     </div>
