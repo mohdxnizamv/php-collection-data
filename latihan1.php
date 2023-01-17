@@ -61,13 +61,6 @@ $mahasiswa = $rows;
 
     </section>
 
-
-    <div class="container mx-auto text-center">
-        <a href="tambah.php"
-            class="px-4 py-3 mt-10 text-lg font-bold text-white uppercase bg-gray-800 hover:bg-gray-900">Next
-            Pages</a>
-    </div>
-
 </body>
 
 </html>
