@@ -11,7 +11,7 @@ $m = query("SELECT * FROM mahasiswa WHERE id = $id");
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="app/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detail Customer</title>
@@ -25,11 +25,9 @@ $m = query("SELECT * FROM mahasiswa WHERE id = $id");
             <li>Wallet Address : <?= $m['address']; ?></li>
             <li>NFT ID : <?= $m['idnft']; ?></li>
             <li>Rujukan : <?= $m['example']; ?></li>
-            <br>
-            <li><a href="latihan3.php"
-                    class="items-center font-Vampiro hover:font-bold px-9 justify-center space-x-3 rounded border border-gray-300 py-2 shadow-sm transition duration-150 hover:-translate-y-0.5 hover:bg-opacity-30 hover:shadow-lg">
-                    Back </a>
-            </li>
+            <br />
+            <a href="latihan3.php"
+                class="px-4 py-3 mt-10 text-lg font-bold text-white uppercase bg-gray-800 hover:bg-gray-900">Back</a>
         </ul>
     </section>
 </body>
