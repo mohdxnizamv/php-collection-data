@@ -6,7 +6,7 @@ if (isset($_POST['tambah'])) {
   if (tambah($_POST) > 0) {
     echo "<script>
             alert('data berhasil ditambahkan');
-            document.location.href = 'latihan3.php';
+            document.location.href = 'latihan2.php';
          </script>";
   } else {
     echo "data gagal ditambahkan!";
@@ -21,13 +21,22 @@ if (isset($_POST['tambah'])) {
     <script src="https://cdn.tailwindcss.com"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+    body {
+        background-image: url(./svg/rainbow-vortex.svg);
+        background-repeat: repeat;
+        background-size: cover;
+    }
+    </style>
+
     <title>Submit | Protocol Complain</title>
 </head>
 
 <body>
     <form action="" method="POST">
         <!-- Global Container -->
-        <div class="flex min-h-screen items-center justify-center bg-gray-900">
+        <div class="flex min-h-screen items-center justify-center">
             <!-- Card Container -->
             <div
                 class="relative m-6 flex flex-col space-y-10 rounded-2xl bg-white shadow-2xl md:m-0 md:flex-row md:space-y-0">

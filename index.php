@@ -20,13 +20,13 @@
 
                     <div class="items-center hidden md:flex">
                         <a class="mx-3 text-lg text-white uppercase cursor-pointer hover:text-gray-300">
-                            How To Buy
-                        </a>
-                        <a class="mx-3 text-lg text-white uppercase cursor-pointer hover:text-gray-300">
                             Info
                         </a>
                         <a class="mx-3 text-lg text-white uppercase cursor-pointer hover:text-gray-300">
-                            About Us
+                            Perkhimatan
+                        </a>
+                        <a class="mx-3 text-lg text-white uppercase cursor-pointer hover:text-gray-300">
+                            Hubungi Kami
                         </a>
                     </div>
                 </div>

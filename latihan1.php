@@ -24,10 +24,19 @@ $mahasiswa = $rows;
     <script src="https://cdn.tailwindcss.com"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+    body {
+        background-image: url(./svg/rainbow-vortex.svg);
+        background-repeat: repeat;
+        background-size: cover;
+    }
+    </style>
+
     <title>Honor Protocol Complain</title>
 </head>
 
-<body class="font-Poppins bg-gray-900 text-white">
+<body class="font-Poppins text-white">
     <section class="container mx-auto max-w-7xl py-6 sm:text-xs md:text-xs lg:text-sm xl:text-base">
 
         <h3 class="text-4xl font-Vampiro">Contoh Customer Complain</h3>
