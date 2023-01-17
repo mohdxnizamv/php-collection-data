@@ -18,7 +18,7 @@ if (isset($_POST['tambah'])) {
 <html lang="en">
 
 <head>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link rel="stylesheet" href="./app/css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,19 +34,19 @@ if (isset($_POST['tambah'])) {
     <title>Submit | Protocol Complain</title>
 </head>
 
-<body>
+<body class="font-Josefin">
     <form action="" method="POST">
         <!-- Global Container -->
         <div class="flex min-h-screen items-center justify-center">
             <!-- Card Container -->
             <div
-                class="relative m-6 flex flex-col space-y-10 rounded-2xl bg-white shadow-2xl md:m-0 md:flex-row md:space-y-0">
+                class="relative m-3 flex flex-col space-y-10 rounded-2xl bg-white shadow-2xl md:m-0 md:flex-row md:space-y-0">
                 <!-- Left Side -->
                 <div class="p-6 md:p-20">
                     <!-- Top Content -->
                     <h2 class="mb-5 font-Vampiro text-4xl font-bold">Customer Complain 2023</h2>
-                    <p class="mb-12 max-w-sm font-sans font-light text-gray-600">
-                        You can right all complain here, without miss!
+                    <p class="mb-12 max-w-sm text-gray-600">
+                        * I am writing to express my disappointment and dissatisfaction with the product and service ..
                     </p>
 
                     <span class="flex flex-col space-x-0 space-y-6 md:flex-row md:space-x-4 md:space-y-0">
@@ -110,6 +110,7 @@ if (isset($_POST['tambah'])) {
                 <!-- Close Button -->
                 <div
                     class="group absolute -top-5 right-4 flex h-10 w-10 items-center justify-center rounded-full bg-gray-200 transition duration-150 hover:-translate-y-0.5 hover:cursor-pointer md:top-4 md:bg-white">
+
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black group-hover:text-gray-600"
                         viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round"
                         stroke-linejoin="round">

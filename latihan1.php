@@ -21,7 +21,7 @@ $mahasiswa = $rows;
 <html lang="en">
 
 <head>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link rel="stylesheet" href="./app/css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,13 +37,13 @@ $mahasiswa = $rows;
     <title>Honor Protocol Complain</title>
 </head>
 
-<body class="font-Poppins text-white">
+<body class="font-Josefin text-white">
     <section class="container mx-auto max-w-7xl py-6 sm:text-xs md:text-xs lg:text-sm xl:text-base">
 
-        <h3 class="text-4xl font-Vampiro">Contoh Customer Complain</h3>
+        <h3 class="text-4xl font-Vampiro text-center">Contoh Customer Complain</h3>
 
         <table border="1" cellpadding="10" cellspacing="0">
-            <tr class="font-bold font-Vampiro">
+            <tr class="font-bold text-2xl font-Vampiro">
                 <th>ID</th>
                 <th>User Name</th>
                 <th>Rujukan</th>
@@ -59,13 +59,14 @@ $mahasiswa = $rows;
             <?php endforeach; ?>
         </table>
 
-        <br />
+    </section>
 
+
+    <div class="container mx-auto text-center">
         <a href="tambah.php"
             class="px-4 py-3 mt-10 text-lg font-bold text-white uppercase bg-gray-800 hover:bg-gray-900">Next
             Pages</a>
-
-    </section>
+    </div>
 
 </body>
 

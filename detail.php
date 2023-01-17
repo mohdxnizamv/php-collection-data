@@ -11,7 +11,7 @@ $m = query("SELECT * FROM mahasiswa WHERE id = $id");
 <html lang="en">
 
 <head>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link rel="stylesheet" href="./app/css/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,9 +28,9 @@ $m = query("SELECT * FROM mahasiswa WHERE id = $id");
     <title>Detail Customer</title>
 </head>
 
-<body>
+<body class="text-gray-400 font-Josefin">
 
-    <div class="px-4 p-40">
+    <div class="px-4 p-28">
         <div class="flex flex-col max-w-6xl mx-auto md:flex-row">
 
             <h2 class="w-full mr-8 text-3xl font-extrabold leading-9 md:w-1/3">
