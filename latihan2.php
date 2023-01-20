@@ -10,6 +10,7 @@ $mahasiswa = query("SELECT * FROM mahasiswa");
     <link rel="stylesheet" href="./app/css/style.css">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="refresh" content="60" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <style>
@@ -73,7 +74,12 @@ $mahasiswa = query("SELECT * FROM mahasiswa");
         <a href="latihan1.php"
             class="px-4 py-3 mt-10 text-lg font-bold text-white uppercase bg-gray-800 hover:bg-gray-900">full
             details</a>
+        <!--  -->
+
+        <h1 class="pr-5 text-left text-black"></h1>
     </div>
+
+    <script src="./app/js/scripts.js"></script>
 </body>
 
 </html>

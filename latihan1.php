@@ -37,14 +37,17 @@ $mahasiswa = $rows;
     <title>Honor Protocol Complain</title>
 </head>
 
-<body class="font-Josefin text-white">
-    <section class="container mx-auto max-w-7xl py-6 sm:text-xs md:text-xs lg:text-sm xl:text-base">
+<body id="e" class="font-Josefin text-white">
 
-        <h3 class="text-4xl font-Vampiro text-center underline">Contoh Customer Complain</h3>
+    <h3 class="text-4xl font-Vampiro underline text-center">Contoh
+        Customer
+        Complain</h3>
+
+    <section class="container mx-auto max-w-7xl py-6 p-1 sm:text-xs md:text-base lg:text-lg xl:text-lg">
 
         <table border="1" cellpadding="10" cellspacing="0">
-            <tr class="font-bold text-xl font-Vampiro">
-                <th>ID</th>
+            <tr class="font-Vampiro">
+                <th class="hidden sm:block">ID</th>
                 <th>User Name</th>
                 <th>Rujukan</th>
             </tr>
@@ -52,14 +55,20 @@ $mahasiswa = $rows;
             <?php $i = 1;
     foreach ($mahasiswa as $m) : ?>
             <tr>
-                <td><?= $i++; ?></td>
+                <td class="hidden sm:block"><?= $i++; ?></td>
                 <td><?= $m['username']; ?></td>
-                <td><?= $m['example']; ?></td>
+                <td class="mx-auto p-1"><?= $m['example']; ?></td>
             </tr>
             <?php endforeach; ?>
         </table>
 
     </section>
+
+    <script>
+    document.querySelector("#e").addEventListener("selectstart", (e) => {
+        e.preventDefault()
+    })
+    </script>
 
 </body>
 

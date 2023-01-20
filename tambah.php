@@ -56,7 +56,7 @@ if (isset($_POST['tambah'])) {
 
                         <input type="text" name="address" required
                             class="w-full rounded-md border border-gray-300 p-6 placeholder:font-sans placeholder:font-light focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
-                            placeholder="Enter your address" maxlength="30" />
+                            placeholder="Enter your address" maxlength="50" />
 
                         <input type="text" name="idnft" required
                             class="w-full rounded-md border border-gray-300 p-6 placeholder:font-sans placeholder:font-light focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
@@ -69,7 +69,7 @@ if (isset($_POST['tambah'])) {
                         <label class="text-gray-700" for="name">
                             <textarea
                                 class="flex-1 w-full px-4 py-2 text-base text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
-                                name="example" rows="5" cols="40" maxlength="500">
+                                name="example" rows="5" cols="40">
                             </textarea>
                         </label>
                     </div>
