@@ -17,7 +17,7 @@ $mahasiswa = query("SELECT * FROM mahasiswa");
 
 <body>
 
-    <div class="relative h-screen overflow-hidden font-Vampiro">
+    <div class="relative h-screen overflow-hidden font-Signika">
         <img src="./svg/rainbow-vortex.svg" class="absolute object-cover w-full h-full" />
 
         <header class="absolute top-0 left-0 right-0 z-20">

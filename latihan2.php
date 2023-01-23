@@ -24,24 +24,24 @@ $mahasiswa = query("SELECT * FROM mahasiswa");
     <title>Daftar Customer User</title>
 </head>
 
-<body class="font-Josefin">
+<body class="font-Signika">
     <div class="container mx-auto max-w-3xl px-4 sm:px-2">
         <div class="py-8">
-            <div class="-mx-4 overflow-x-auto px-4 py-4 sm:-mx-8 sm:px-8">
+            <div class="overflow-x-auto px-4 py-4">
                 <div class="inline-block min-w-full overflow-hidden rounded-lg shadow-lg">
                     <table class="min-w-full leading-normal" border="1" cellpadding="10" cellspacing="0">
                         <thead>
                             <tr>
                                 <th scope="col"
-                                    class="border-b border-gray-200 px-5 py-3 text-left text-base font-bold uppercase text-gray-500">
+                                    class="border-b border-gray-200 px-5 py-3 text-center text-base font-bold uppercase text-gray-500">
                                     ID
                                 </th>
                                 <th scope="col"
-                                    class="border-b border-gray-200 px-5 py-3 text-left text-base font-bold uppercase text-gray-500">
+                                    class="border-b border-gray-200 px-5 py-3 text-center text-base font-bold uppercase text-gray-500">
                                     User Name
                                 </th>
                                 <th scope="col"
-                                    class="border-b border-gray-200 px-5 py-3 text-left text-base font-bold uppercase text-gray-500">
+                                    class="border-b border-gray-200 px-5 py-3 text-center text-base font-bold uppercase text-gray-500">
                                     Status
                                 </th>
                             </tr>
@@ -52,13 +52,15 @@ $mahasiswa = query("SELECT * FROM mahasiswa");
                         </thead>
 
                         <tr class="text-gray-400">
-                            <td class="pl-6"><?= $i++; ?></td>
-                            <td><?= $m['username']; ?></td>
+                            <td class="text-center"><?= $i++; ?></td>
+                            <td class="text-center"><?= $m['username']; ?></td>
                             <td>
-                                <a href="detail.php?id=<?= $m['id']; ?>"
-                                    class="px-4 py-2 mt-10 sm:text-xs md:text-xs lg:text-sm xl:text-sm font-semibold text-white bg-gray-800 hover:bg-gray-900">
-                                    click detail
-                                </a>
+                                <div class="text-center">
+                                    <a href="detail.php?id=<?= $m['id']; ?>"
+                                        class="px-4 py-2 mt-10 sm:text-xs md:text-xs lg:text-sm xl:text-sm font-semibold text-white bg-gray-800 hover:bg-gray-900">
+                                        click detail
+                                    </a>
+                                </div>
                             </td>
                         </tr>
 

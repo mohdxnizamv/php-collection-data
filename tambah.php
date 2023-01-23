@@ -34,7 +34,7 @@ if (isset($_POST['tambah'])) {
     <title>Submit | Protocol Complain</title>
 </head>
 
-<body class="font-Josefin">
+<body class="font-Signika">
     <form action="" method="POST">
         <!-- Global Container -->
         <div class="flex min-h-screen items-center justify-center">
@@ -45,31 +45,31 @@ if (isset($_POST['tambah'])) {
                 <div class="p-6 md:p-20">
                     <!-- Top Content -->
                     <h2 class="mb-5 font-Vampiro text-4xl font-bold">Customer Complain 2023</h2>
-                    <p class="mb-12 max-w-sm text-gray-600">
+                    <p class="mb-12 max-w-lg text-gray-600">
                         * I am writing to express my disappointment and dissatisfaction with the product and service ..
                     </p>
 
                     <span class="flex flex-col space-x-0 space-y-6 md:flex-row md:space-x-4 md:space-y-0">
                         <input type="text" name="username" autofocus required
                             class="w-full rounded-md border border-gray-300 p-6 placeholder:font-sans placeholder:font-light focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
-                            placeholder="Enter your user nama" maxlength="20" />
+                            placeholder="user nama" maxlength="20" />
 
                         <input type="text" name="address" required
                             class="w-full rounded-md border border-gray-300 p-6 placeholder:font-sans placeholder:font-light focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
-                            placeholder="Enter your address" maxlength="50" />
+                            placeholder="address" maxlength="50" />
 
                         <input type="text" name="idnft" required
                             class="w-full rounded-md border border-gray-300 p-6 placeholder:font-sans placeholder:font-light focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
-                            placeholder="Enter your nft id" maxlength="5" />
+                            placeholder="nft id" maxlength="5" />
                     </span>
 
                     <br />
 
                     <div class="col-span-2">
-                        <label class="text-gray-700" for="name">
-                            <textarea
+                        <label class="text-gray-700">
+                            <textarea name="example"
                                 class="flex-1 w-full px-4 py-2 text-base text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
-                                name="example" rows="5" cols="40">
+                                 rows="5" cols="40">
                             </textarea>
                         </label>
                     </div>

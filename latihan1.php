@@ -37,26 +37,28 @@ $mahasiswa = $rows;
     <title>Honor Protocol Complain</title>
 </head>
 
-<body id="e" class="font-Josefin text-white">
+<body id="e" class="font-Signika text-white">
 
-    <h3 class="text-4xl font-Vampiro underline text-center">Contoh
+    <h3 class="text-4xl text-center">Contoh
         Customer
         Complain</h3>
 
     <section class="container mx-auto max-w-7xl py-6 p-1 sm:text-xs md:text-base lg:text-lg xl:text-lg">
 
         <table border="1" cellpadding="10" cellspacing="0">
-            <tr class="font-Vampiro">
-                <th class="hidden sm:block">ID</th>
-                <th>User Name</th>
+            <tr>
+                <th>ID</th>
+                <th>userNAME</th>
+                <th>idNFT</th>
                 <th>Rujukan</th>
             </tr>
 
             <?php $i = 1;
     foreach ($mahasiswa as $m) : ?>
             <tr>
-                <td class="hidden sm:block"><?= $i++; ?></td>
+                <td><?= $i++; ?></td>
                 <td><?= $m['username']; ?></td>
+                <td><?= $m['idnft']; ?></td>
                 <td class="mx-auto p-1"><?= $m['example']; ?></td>
             </tr>
             <?php endforeach; ?>

@@ -10,8 +10,10 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        Vampiro: ["Vampiro One", "cursive"],
         Josefin: ["Josefin Sans", "sans-serif"],
+        Poppins: ["Poppins", "sans-serif"],
+        Quicksand: ["Quicksand", "sans-serif"],
+        Signika: ["Signika Negative", "sans-serif"],
       },
       colors: {
         softYellow: "#FFDE00",
