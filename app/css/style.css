@@ -637,6 +637,10 @@ video {
   margin-top: 3rem;
 }
 
+.mt-7{
+  margin-top: 1.75rem;
+}
+
 .block{
   display: block;
 }
@@ -659,10 +663,6 @@ video {
 
 .h-screen{
   height: 100vh;
-}
-
-.h-full{
-  height: 100%;
 }
 
 .h-10{
@@ -833,11 +833,6 @@ video {
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
-.object-cover{
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .p-28{
   padding: 7rem;
 }
@@ -905,18 +900,6 @@ video {
 
 .text-center{
   text-align: center;
-}
-
-.font-Poppins{
-  font-family: Poppins, sans-serif;
-}
-
-.font-Signika{
-  font-family: Signika Negative, sans-serif;
-}
-
-.font-Quicksand{
-  font-family: Quicksand, sans-serif;
 }
 
 .text-3xl{
@@ -1021,10 +1004,6 @@ video {
   color: rgb(14 116 144 / var(--tw-text-opacity));
 }
 
-.underline{
-  text-decoration-line: underline;
-}
-
 .placeholder-gray-400::-moz-placeholder{
   --tw-placeholder-opacity: 1;
   color: rgb(156 163 175 / var(--tw-placeholder-opacity));
@@ -1063,6 +1042,16 @@ video {
 
 .duration-150{
   transition-duration: 150ms;
+}
+
+body {
+  background-image: url(/svg/Sprinkle.svg);
+  background-color: black;
+  background-repeat: repeat;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Quicksand;
 }
 
 .placeholder\:font-sans::-moz-placeholder{
@@ -1233,6 +1222,16 @@ video {
     font-size: 0.875rem;
     line-height: 1.25rem;
   }
+
+  .lg\:text-xs{
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .lg\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 @media (min-width: 1440px){
@@ -1249,5 +1248,15 @@ video {
   .xl\:text-sm{
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  .xl\:text-xs{
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .xl\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }

@@ -21,3 +21,13 @@
     @apply w-full rounded-md border border-gray-300 p-6 placeholder:font-sans placeholder:font-light;
   }
 }
+
+body {
+  background-image: url(/svg/Sprinkle.svg);
+  background-color: black;
+  background-repeat: repeat;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Quicksand;
+}

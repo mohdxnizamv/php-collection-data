@@ -8,23 +8,16 @@ $mahasiswa = query("SELECT * FROM mahasiswa");
 <head>
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link rel="stylesheet" href="./app/css/style.css">
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta http-equiv="refresh" content="60" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <style>
-    body {
-        background-image: url(./svg/Sprinkle.svg);
-        background-repeat: repeat;
-        background-size: cover;
-    }
-    </style>
-
     <title>Daftar Customer User</title>
 </head>
 
-<body class="font-Signika">
+<body>
     <div class="container mx-auto max-w-3xl px-4 sm:px-2">
         <div class="py-8">
             <div class="overflow-x-auto px-4 py-4">

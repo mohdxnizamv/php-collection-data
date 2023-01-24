@@ -13,22 +13,15 @@ $m = query("SELECT * FROM mahasiswa WHERE id = $id");
 <head>
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link rel="stylesheet" href="./app/css/style.css">
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-    body {
-        background-image: url(./svg/Sprinkle.svg);
-        background-repeat: repeat;
-        background-size: cover;
-    }
-    </style>
-
     <title>Detail Customer</title>
 </head>
 
-<body id="e" class="text-gray-400 font-Signika">
+<body id="e" class="text-gray-400">
 
     <div class="px-4 p-28">
         <div class="flex flex-col max-w-6xl mx-auto md:flex-row">

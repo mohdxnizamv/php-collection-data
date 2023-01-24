@@ -20,21 +20,14 @@ if (isset($_POST['tambah'])) {
 <head>
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link rel="stylesheet" href="./app/css/style.css">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <style>
-    body {
-        background-image: url(./svg/Sprinkle.svg);
-        background-repeat: repeat;
-        background-size: cover;
-    }
-    </style>
 
     <title>Submit | Protocol Complain</title>
 </head>
 
-<body class="font-Signika">
+<body>
     <form action="" method="POST">
         <!-- Global Container -->
         <div class="flex min-h-screen items-center justify-center">
@@ -44,7 +37,7 @@ if (isset($_POST['tambah'])) {
                 <!-- Left Side -->
                 <div class="p-6 md:p-20">
                     <!-- Top Content -->
-                    <h2 class="mb-5 font-Vampiro text-4xl font-bold">Customer Complain 2023</h2>
+                    <h2 class="mb-5 text-4xl font-bold">Customer Complain 2023</h2>
                     <p class="mb-12 max-w-lg text-gray-600">
                         * I am writing to express my disappointment and dissatisfaction with the product and service ..
                     </p>
@@ -69,7 +62,7 @@ if (isset($_POST['tambah'])) {
                         <label class="text-gray-700">
                             <textarea name="example"
                                 class="flex-1 w-full px-4 py-2 text-base text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
-                                 rows="5" cols="40">
+                                rows="5" cols="40">
                             </textarea>
                         </label>
                     </div>
