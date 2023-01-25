@@ -51,7 +51,7 @@ $mahasiswa = query("SELECT * FROM mahasiswa");
                                 <div class="text-center">
                                     <a href="detail.php?id=<?= $m['id']; ?>"
                                         class="px-4 py-2 mt-10 sm:text-xs md:text-xs lg:text-sm xl:text-sm font-semibold text-white bg-gray-800 hover:bg-gray-900">
-                                        click detail
+                                        click
                                     </a>
                                 </div>
                             </td>

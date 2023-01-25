@@ -19,20 +19,20 @@ $mahasiswa = query("SELECT * FROM mahasiswa");
 
 <body>
 
-    <div class="relative h-screen overflow-hidden">
+    <div class="relative h-screen overflow-hidden capitalize">
 
         <header class="absolute top-0 left-0 right-0 z-20">
             <nav class="container px-6 py-4 mx-auto md:px-12">
                 <div class="items-center justify-center md:flex">
 
                     <div class="items-center hidden md:flex">
-                        <a class="mx-3 text-lg text-white uppercase cursor-pointer hover:text-gray-300">
+                        <a class="mx-3 text-lg text-white cursor-pointer hover:text-gray-300">
                             Info
                         </a>
-                        <a class="mx-3 text-lg text-white uppercase cursor-pointer hover:text-gray-300">
-                            Perkhimatan
-                        </a>
-                        <a class="mx-3 text-lg text-white uppercase cursor-pointer hover:text-gray-300">
+                        <a href="latihan1.php"
+                            class="mx-3 text-lg text-white cursor-pointer hover:text-gray-300">Mencari
+                            Maklumat</a>
+                        <a class="mx-3 text-lg text-white cursor-pointer hover:text-gray-300">
                             Hubungi Kami
                         </a>
                     </div>
@@ -45,7 +45,7 @@ $mahasiswa = query("SELECT * FROM mahasiswa");
                     Life - Changing
                 </h1>
                 <a href="tambah.php"
-                    class="block px-4 py-3 mt-32 text-lg font-bold text-white uppercase bg-gray-800 hover:bg-gray-900">
+                    class="block px-4 py-3 mt-32 text-lg font-bold text-white bg-gray-800 hover:bg-gray-900">
                     Start Now
                 </a>
             </div>

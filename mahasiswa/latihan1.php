@@ -26,33 +26,45 @@ $mahasiswa = $rows;
     <title>Honor Protocol Complain</title>
 </head>
 
-<body id="e" class="text-white">
+<body id="e" class="text-white text-justify">
 
     <h3 class="text-4xl font-bold text-center mt-7">Contoh
         Customer
         Complain</h3>
 
     <section class="container mx-auto max-w-7xl py-6 p-1 sm:text-xs md:text-xs lg:text-base xl:text-base">
+        <div class="py-4">
+            <div class="overflow-x-auto px-4 py-4">
+                <div class="inline-block min-w-full overflow-hidden rounded-lg shadow-lg">
+                    <table class="min-w-full leading-normal" border="1" cellpadding="10" cellspacing="0">
+                        <tr>
+                            <th scope="col"
+                                class="border-b border-gray-200 px-5 py-3 text-base font-bold uppercase text-gray-500">
+                                ID</th>
+                            <th scope="col"
+                                class="border-b border-gray-200 px-5 py-3 text-base font-bold uppercase text-gray-500">
+                                userNAME</th>
+                            <th scope="col"
+                                class="border-b border-gray-200 px-5 py-3 text-base font-bold uppercase text-gray-500">
+                                idNFT</th>
+                            <th scope="col"
+                                class="border-b border-gray-200 px-5 py-3 text-base font-bold uppercase text-gray-500">
+                                Rujukan</th>
+                        </tr>
 
-        <table border="1" cellpadding="10" cellspacing="0">
-            <tr>
-                <th>ID</th>
-                <th>userNAME</th>
-                <th>idNFT</th>
-                <th>Rujukan</th>
-            </tr>
-
-            <?php $i = 1;
+                        <?php $i = 1;
     foreach ($mahasiswa as $m) : ?>
-            <tr>
-                <td><?= $i++; ?></td>
-                <td><?= $m['username']; ?></td>
-                <td><?= $m['idnft']; ?></td>
-                <td class="mx-auto p-1"><?= $m['example']; ?></td>
-            </tr>
-            <?php endforeach; ?>
-        </table>
-
+                        <tr>
+                            <td><?= $i++; ?></td>
+                            <td><?= $m['username']; ?></td>
+                            <td><?= $m['idnft']; ?></td>
+                            <td class="p-1"><?= $m['example']; ?></td>
+                        </tr>
+                        <?php endforeach; ?>
+                    </table>
+                </div>
+            </div>
+        </div>
     </section>
 
     <script>
