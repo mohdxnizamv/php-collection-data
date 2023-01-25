@@ -26,15 +26,15 @@ $mahasiswa = query("SELECT * FROM mahasiswa");
                         <thead>
                             <tr>
                                 <th scope="col"
-                                    class="border-b border-gray-200 px-5 py-3 text-center text-base font-bold uppercase text-gray-500">
+                                    class="border-b border-gray-200 px-5 py-3 text-left text-base font-bold uppercase text-gray-800">
                                     ID
                                 </th>
                                 <th scope="col"
-                                    class="border-b border-gray-200 px-5 py-3 text-center text-base font-bold uppercase text-gray-500">
+                                    class="border-b border-gray-200 px-5 py-3 text-left text-base font-bold uppercase text-gray-800">
                                     User Name
                                 </th>
                                 <th scope="col"
-                                    class="border-b border-gray-200 px-5 py-3 text-center text-base font-bold uppercase text-gray-500">
+                                    class="border-b border-gray-200 px-5 py-3 text-center text-base font-bold uppercase text-gray-800">
                                     Status
                                 </th>
                             </tr>
@@ -44,9 +44,9 @@ $mahasiswa = query("SELECT * FROM mahasiswa");
 
                         </thead>
 
-                        <tr class="text-gray-400">
-                            <td class="text-center"><?= $i++; ?></td>
-                            <td class="text-center"><?= $m['username']; ?></td>
+                        <tr class="text-gray-800 sm:text-xs md:text-base lg:text-base xl:text-base">
+                            <td class="text-left"><?= $i++; ?></td>
+                            <td class="text-left"><?= $m['username']; ?></td>
                             <td>
                                 <div class="text-center">
                                     <a href="detail.php?id=<?= $m['id']; ?>" class="btn">
@@ -69,7 +69,7 @@ $mahasiswa = query("SELECT * FROM mahasiswa");
             details</a>
         <!--  -->
 
-        <h1 class="pr-5 text-left text-black"></h1>
+        <h1 class="pr-5 text-left text-gray-800"></h1>
     </div>
 
     <script src="./app/js/scripts.js"></script>

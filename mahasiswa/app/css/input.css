@@ -23,12 +23,7 @@
 }
 
 body {
-  background: rgb(6, 6, 6);
-  background: radial-gradient(
-    circle,
-    rgba(6, 6, 6, 1) 0%,
-    rgba(71, 30, 97, 1) 100%
-  );
+  background-color: transparent;
   margin-left: auto;
   margin-right: auto;
   font-family: Poppins;

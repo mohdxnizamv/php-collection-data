@@ -38,7 +38,7 @@ if (isset($_POST['tambah'])) {
                 <div class="p-6 md:p-20">
                     <!-- Top Content -->
                     <h2 class="mb-5 text-4xl font-bold">Customer Complain 2023</h2>
-                    <p class="mb-12 max-w-lg text-gray-600">
+                    <p class="mb-12 max-w-lg text-gray-800">
                         * I am writing to express my disappointment and dissatisfaction with the product and service ..
                     </p>
 
@@ -59,9 +59,9 @@ if (isset($_POST['tambah'])) {
                     <br />
 
                     <div class="col-span-2">
-                        <label class="text-gray-700">
+                        <label>
                             <textarea name="example"
-                                class="flex-1 w-full px-4 py-2 text-base text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+                                class="flex-1 w-full px-4 py-2 text-base text-gray-800 placeholder-gray-400 bg-white border border-gray-300 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
                                 rows="5" cols="40">
                             </textarea>
                         </label>

@@ -26,7 +26,7 @@ $mahasiswa = $rows;
     <title>Honor Protocol Complain</title>
 </head>
 
-<body id="e" class="text-justify text-gray-500">
+<body id="e" class="text-justify text-gray-800">
 
     <h3 class="text-4xl font-bold text-center mt-7">Contoh
         Customer
