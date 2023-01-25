@@ -26,7 +26,7 @@ $mahasiswa = $rows;
     <title>Honor Protocol Complain</title>
 </head>
 
-<body id="e" class="text-white text-justify">
+<body id="e" class="text-justify text-gray-500">
 
     <h3 class="text-4xl font-bold text-center mt-7">Contoh
         Customer
@@ -38,17 +38,13 @@ $mahasiswa = $rows;
                 <div class="inline-block min-w-full overflow-hidden rounded-lg shadow-lg">
                     <table class="min-w-full leading-normal" border="1" cellpadding="10" cellspacing="0">
                         <tr>
-                            <th scope="col"
-                                class="border-b border-gray-200 px-5 py-3 text-base font-bold uppercase text-gray-500">
+                            <th scope="col" class="border-b border-gray-200 px-5 py-3 text-base font-bold uppercase">
                                 ID</th>
-                            <th scope="col"
-                                class="border-b border-gray-200 px-5 py-3 text-base font-bold uppercase text-gray-500">
+                            <th scope="col" class="border-b border-gray-200 px-5 py-3 text-base font-bold uppercase">
                                 userNAME</th>
-                            <th scope="col"
-                                class="border-b border-gray-200 px-5 py-3 text-base font-bold uppercase text-gray-500">
+                            <th scope="col" class="border-b border-gray-200 px-5 py-3 text-base font-bold uppercase">
                                 idNFT</th>
-                            <th scope="col"
-                                class="border-b border-gray-200 px-5 py-3 text-base font-bold uppercase text-gray-500">
+                            <th scope="col" class="border-b border-gray-200 px-5 py-3 text-base font-bold uppercase">
                                 Rujukan</th>
                         </tr>
 

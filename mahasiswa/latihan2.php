@@ -49,8 +49,7 @@ $mahasiswa = query("SELECT * FROM mahasiswa");
                             <td class="text-center"><?= $m['username']; ?></td>
                             <td>
                                 <div class="text-center">
-                                    <a href="detail.php?id=<?= $m['id']; ?>"
-                                        class="px-4 py-2 mt-10 sm:text-xs md:text-xs lg:text-sm xl:text-sm font-semibold text-white bg-gray-800 hover:bg-gray-900">
+                                    <a href="detail.php?id=<?= $m['id']; ?>" class="btn">
                                         click
                                     </a>
                                 </div>
@@ -66,8 +65,7 @@ $mahasiswa = query("SELECT * FROM mahasiswa");
     <!--  -->
 
     <div class="container mx-auto text-center">
-        <a href="latihan1.php"
-            class="px-4 py-3 mt-10 text-lg font-bold text-white uppercase bg-gray-800 hover:bg-gray-900">full
+        <a href="latihan1.php" class="btnmid">full
             details</a>
         <!--  -->
 

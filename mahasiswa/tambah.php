@@ -71,8 +71,7 @@ if (isset($_POST['tambah'])) {
                     <div class="mt-6 flex flex-col items-center justify-between space-y-6 md:flex-row md:space-y-0">
                         <div class="font-thin text-cyan-700">Forgot password</div>
 
-                        <button type="submit" name="tambah"
-                            class="block px-4 py-3 mt-10 text-lg font-bold text-white uppercase bg-gray-800 hover:bg-gray-900">
+                        <button type="submit" name="tambah" class="btnbig">
                             <span> Submit </span>
                         </button>
                     </div>

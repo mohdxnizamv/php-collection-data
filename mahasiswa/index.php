@@ -1,6 +1,5 @@
 <?php
-require 'functions.php';
-$mahasiswa = query("SELECT * FROM mahasiswa");
+
 ?>
 
 <!DOCTYPE html>
@@ -26,13 +25,13 @@ $mahasiswa = query("SELECT * FROM mahasiswa");
                 <div class="items-center justify-center md:flex">
 
                     <div class="items-center hidden md:flex">
-                        <a class="mx-3 text-lg text-white cursor-pointer hover:text-gray-300">
+                        <a class="mx-3 text-sm text-white cursor-pointer hover:text-gray-300">
                             Info
                         </a>
                         <a href="latihan1.php"
-                            class="mx-3 text-lg text-white cursor-pointer hover:text-gray-300">Mencari
+                            class="mx-3 text-sm text-white cursor-pointer hover:text-gray-300">Mencari
                             Maklumat</a>
-                        <a class="mx-3 text-lg text-white cursor-pointer hover:text-gray-300">
+                        <a class="mx-3 text-sm text-white cursor-pointer hover:text-gray-300">
                             Hubungi Kami
                         </a>
                     </div>
@@ -44,8 +43,7 @@ $mahasiswa = query("SELECT * FROM mahasiswa");
                 <h1 class="mt-4 font-extrabold leading-tight text-center text-white text-7xl sm:text-6xl">
                     Life - Changing
                 </h1>
-                <a href="tambah.php"
-                    class="block px-4 py-3 mt-32 text-lg font-bold text-white bg-gray-800 hover:bg-gray-900">
+                <a href="tambah.php" class="block mt-32 btnbig">
                     Start Now
                 </a>
             </div>

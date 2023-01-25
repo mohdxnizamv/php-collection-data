@@ -21,7 +21,7 @@ $m = query("SELECT * FROM mahasiswa WHERE id = $id");
     <title>Detail Customer</title>
 </head>
 
-<body id="e" class="text-gray-300 text-justify">
+<body id="e" class="text-justify text-white">
 
     <div class="px-4 p-28">
         <div class="flex flex-col max-w-6xl mx-auto md:flex-row">
@@ -62,8 +62,7 @@ $m = query("SELECT * FROM mahasiswa WHERE id = $id");
                     </p>
                 </dd>
 
-                <a href="latihan2.php"
-                    class="px-4 py-3 mt-10 text-lg font-bold text-white uppercase bg-gray-800 hover:bg-gray-900">Back</a>
+                <a href="latihan2.php" class="btnmid">Back</a>
             </dl>
         </div>
     </div>
