@@ -1,10 +1,12 @@
 <?php
 
-include('connection.php');
+include('connection.php'); // Koneksi database
 
-$query = mysqli_query($connect, "SELECT * FROM karyawan");
+$keyword = $_GET['keyword']; // Mengambil keyword yang dikirim dari form
+
+$query = mysqli_query($connect,"SELECT * FROM karyawan WHERE umur='$keyword'"); // Mengambil data pada database berdasarkan nama sesuai keyword yang ditampung pada variabel $keyword.
+
 $results = mysqli_fetch_all($query, MYSQLI_ASSOC);
-
 ?>
 
 
@@ -34,6 +36,7 @@ $results = mysqli_fetch_all($query, MYSQLI_ASSOC);
     </form>
 
     <br></br>
+
 
     <table border="1" cellpadding="10" cellspacing="0">
         <tr>
