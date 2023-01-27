@@ -6,7 +6,7 @@ $mahasiswa = query("SELECT * FROM mahasiswa");
 <html lang="en">
 
 <head>
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./app/css/style.css">
 
     <meta charset="UTF-8" />
@@ -49,7 +49,7 @@ $mahasiswa = query("SELECT * FROM mahasiswa");
                             <td class="text-left"><?= $m['username']; ?></td>
                             <td>
                                 <div class="text-center">
-                                    <a href="detail.php?id=<?= $m['id']; ?>" class="btn">
+                                    <a href="detail.php?id=<?= $m['id']; ?>" class="btn-primary">
                                         click
                                     </a>
                                 </div>
@@ -65,7 +65,7 @@ $mahasiswa = query("SELECT * FROM mahasiswa");
     <!--  -->
 
     <div class="container mx-auto text-center">
-        <a href="latihan1.php" class="btnmid">full
+        <a href="latihan1.php" class="btn-secondary">full
             details</a>
         <!--  -->
 

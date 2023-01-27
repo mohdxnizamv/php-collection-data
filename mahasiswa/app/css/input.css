@@ -5,13 +5,13 @@
 @tailwind utilities;
 
 @layer components {
-  .btn {
-    @apply mt-10 rounded-3xl bg-gray-800 px-4 py-2 font-semibold text-white hover:bg-gray-900 sm:text-xs md:text-xs lg:text-sm xl:text-sm;
+  .btn-primary {
+    @apply rounded-full border border-gray-300 px-1 py-0.5 shadow-sm transition duration-150 hover:-translate-y-0.5 hover:bg-opacity-30 hover:shadow-lg;
   }
-  .btnmid {
-    @apply mt-10 rounded-full bg-gray-800 px-8 py-3 text-base font-semibold text-white hover:bg-gray-900;
+  .btn-secondary {
+    @apply rounded border border-gray-300 px-6 py-2 shadow-sm transition duration-150 hover:-translate-y-0.5 hover:bg-opacity-30 hover:shadow-lg;
   }
-  .btnbig {
+  .btn-lg {
     @apply mt-10 rounded-full bg-gray-800 px-14 py-6 text-base font-semibold text-white hover:bg-gray-900;
   }
   .datainput {
@@ -23,8 +23,8 @@
 }
 
 body {
-  background-color: transparent;
+  background-color: lightblue;
   margin-left: auto;
   margin-right: auto;
-  font-family: Poppins;
+  font-family: monospace;
 }

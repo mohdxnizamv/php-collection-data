@@ -2,7 +2,7 @@
   "semi": false,
   "overrides": [
     {
-      "files": ".php",
+      "files": ".ts",
       "options": {
         "semi": false
       }

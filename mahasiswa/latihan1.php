@@ -17,7 +17,7 @@ $mahasiswa = $rows;
 <html lang="en">
 
 <head>
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./app/css/style.css">
 
     <meta charset="UTF-8">

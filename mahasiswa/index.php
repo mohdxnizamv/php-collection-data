@@ -6,7 +6,7 @@
 <html lang="en">
 
 <head>
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./app/css/style.css">
 
     <meta charset="UTF-8">
@@ -38,12 +38,13 @@
                 </div>
             </nav>
         </header>
+
         <div class="container relative z-10 flex items-center px-6 py-32 mx-auto md:px-12 xl:py-40">
             <div class="relative z-10 flex flex-col items-center w-full">
                 <h1 class="mt-4 font-extrabold leading-tight text-center text-gray-800 text-7xl sm:text-6xl">
                     Life - Changing
                 </h1>
-                <a href="tambah.php" class="block mt-32 btnbig">
+                <a href="tambah.php" class="block mt-32 btn-secondary">
                     Start Now
                 </a>
             </div>

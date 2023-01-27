@@ -11,7 +11,7 @@ $m = query("SELECT * FROM mahasiswa WHERE id = $id");
 <html lang="en">
 
 <head>
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./app/css/style.css">
 
     <meta charset="UTF-8">
@@ -62,7 +62,7 @@ $m = query("SELECT * FROM mahasiswa WHERE id = $id");
                     </p>
                 </dd>
 
-                <a href="latihan2.php" class="btnmid">Back</a>
+                <a href="latihan2.php" class="btn-secondary">Back</a>
             </dl>
         </div>
     </div>

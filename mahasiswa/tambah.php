@@ -18,7 +18,7 @@ if (isset($_POST['tambah'])) {
 <html lang="en">
 
 <head>
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./app/css/style.css">
 
     <meta charset="UTF-8">
@@ -71,7 +71,7 @@ if (isset($_POST['tambah'])) {
                     <div class="mt-6 flex flex-col items-center justify-between space-y-6 md:flex-row md:space-y-0">
                         <div class="font-thin text-cyan-700">Forgot password</div>
 
-                        <button type="submit" name="tambah" class="btnbig">
+                        <button type="submit" name="tambah" class="btn-secondary">
                             <span> Submit </span>
                         </button>
                     </div>
