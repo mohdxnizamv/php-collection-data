@@ -2,7 +2,7 @@
 
 function koneksi()
 {
-  return mysqli_connect('localhost', 'root', 'root', 'pw_20230124');
+  return mysqli_connect('localhost', 'root', '3333', 'pw_20230124');
 }
 
 function query($query)
@@ -28,16 +28,15 @@ function tambah($data)
 {
   $conn = koneksi();
 
-  $nama = htmlspecialchars($data['nama']);
-  $negeri = htmlspecialchars($data['negeri']);
-  $umur = htmlspecialchars($data['umur']);
-  $jantina = htmlspecialchars($data['jantina']);
+  $username = htmlspecialchars($data['username']);
+  $address = htmlspecialchars($data['address']);
+  $idnft = htmlspecialchars($data['idnft']);
+  $example = htmlspecialchars($data['example']);
   
-
   $query = "INSERT INTO
-              karyawan
+              mahasiswa
             VALUES
-            (null, '$nama', '$negeri', '$umur', '$jantina');
+            (null, '$username', '$address', '$idnft', '$example');
           ";
   mysqli_query($conn, $query);
   echo mysqli_error($conn);

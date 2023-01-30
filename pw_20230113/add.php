@@ -32,6 +32,8 @@
                     <option value="pahang">pahang</option>
                     <option value="pulau pinang">pulau pinang</option>
                     <option value="negeri sembilan">negeri sembilan</option>
+                    <option value="sabah">sabah</option>
+                    <option value="sarawak">sarawak</option>
                 </select>
             </li>
 

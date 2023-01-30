@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Josefin+Sans:wght@100;200;300;400;500&family=Poppins:wght@400;500;600&family=Quicksand:wght@300&family=Signika+Negative:wght@300;400&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply rounded-full border border-graydark px-1 py-0.5 shadow-sm transition duration-150 hover:-translate-y-0.5 hover:bg-opacity-30 hover:shadow-lg;
+  }
+  .btn-secondary {
+    @apply rounded border border-graydark px-6 py-2 shadow-sm transition duration-150 hover:-translate-y-0.5 hover:bg-opacity-30 hover:shadow-lg;
+  }
+  .btn-lg {
+    @apply mt-10 rounded-full bg-gray-2 px-14 py-6 text-base font-semibold text-white hover:bg-graydark;
+  }
+  .datainput {
+    @apply placeholder-gray-500 ring-gray-300 focus:ring-gray-500 w-56 rounded-lg border-none py-1.5 px-3 text-xs text-black ring-1 focus:ring-2;
+  }
+  .datainput2 {
+    @apply border-gray-300 w-full rounded-md border p-6 placeholder:font-sans placeholder:font-light;
+  }
+}
+
+body {
+  background-color: lightblue;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: monospace;
+}

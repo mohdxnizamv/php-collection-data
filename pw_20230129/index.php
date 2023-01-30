@@ -1,15 +1,15 @@
 <?php
 
-$conn = mysqli_connect('localhost', 'root', 'root', 'pw_20230124');
+$conn = mysqli_connect('localhost', 'root', '3333', 'pw_20230129');
 
-$result = mysqli_query($conn, "SELECT * FROM karyawan");
+$result = mysqli_query($conn, "SELECT * FROM customers");
 
 $rows = [];
 while ($row = mysqli_fetch_assoc($result)) {
   $rows[] = $row;
 }
 
-$karyawan = $rows;
+$customers = $rows;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,33 +19,29 @@ $karyawan = $rows;
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="refresh" content="30" />
-    <title>Daftar Mahasiswa</title>
+    <title>Maklumat Customer</title>
 </head>
 
 <body>
-    <h3>Daftar Mahasiswa</h3>
+    <h3>Maklumat Customer</h3>
 
     <table border="1" cellpadding="10" cellspacing="0">
         <tr>
             <th>No</th>
             <th>NAMA</th>
-            <th>UMUR</th>
-            <th>NEGERI</th>
-            <th>JANTINA</th>
-            <th><a href="tambah.php">tambah maklumat</a></th>
+            <th>CITY</th>
+            <th>COUNTRY</th>
+            
         </tr>
 
         <?php $i = 1;
-        foreach ($karyawan as $m) : ?>
+        foreach ($customers as $m) : ?>
         <tr>
             <td><?= $i++; ?></td>
-            <td><?= $m['nama']; ?></td>
-            <td><?= $m['umur']; ?></td>
-            <td><?= $m['negeri']; ?></td>
-            <td id="e"><?= $m['jantina']; ?></td>
-            <td>
-                <a href="">ubah</a> | <a href="">hapus</a>
-            </td>
+            <td><?= $m['name']; ?></td>
+            <td><?= $m['city']; ?></td>
+            <td><?= $m['country']; ?></td>
+            
         </tr>
 
         <?php endforeach; ?>

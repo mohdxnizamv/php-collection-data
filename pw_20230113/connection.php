@@ -1,6 +1,6 @@
 <?php 
 
-$connect = mysqli_connect('localhost','root','root','pw_20230124');
+$connect = mysqli_connect('localhost','root','3333','pw_20230113');
 
 // if ($connect) echo "berhasil"; else echo "gagal";
 ?>

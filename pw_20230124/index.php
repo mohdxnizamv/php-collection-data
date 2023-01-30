@@ -28,8 +28,7 @@
                         <a class="mx-3 text-sm text-gray-800 cursor-pointer hover:text-gray-300">
                             Info
                         </a>
-                        <a href="latihan2.php"
-                            class="mx-3 text-sm text-gray-800 cursor-pointer hover:text-gray-300">Mencari
+                        <a href="latihan2.php" class="mx-3 text-sm text-gray-800 cursor-pointer hover:text-gray-300">Mencari
                             Maklumat</a>
                         <a class="mx-3 text-sm text-gray-800 cursor-pointer hover:text-gray-300">
                             Hubungi Kami
@@ -44,7 +43,7 @@
                 <h1 class="mt-4 font-extrabold leading-tight text-center text-gray-800 text-7xl sm:text-6xl">
                     Life - Changing
                 </h1>
-                <a href="tambah.php" class="block mt-32 btn-secondary">
+                <a href="tambah.php" class="mt-10 rounded-full bg-boxdark-2 px-14 py-6 text-base font-semibold text-white hover:bg-graydark">
                     Start Now
                 </a>
             </div>

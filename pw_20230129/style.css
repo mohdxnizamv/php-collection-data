@@ -1,20 +1,19 @@
 body {
   background-color: lightblue;
-  width: 800px;
+  width: 1440px;
   margin-left: auto;
   margin-right: auto;
 }
 
 table {
-  text-transform: uppercase;
-  text-align: center;
   font-size: 14px;
   font-family: sans-serif;
   line-height: 1.5;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 form {
-  text-transform: uppercase;
   font-size: 14px;
   font-family: sans-serif;
   line-height: 3.5;

@@ -74,6 +74,14 @@ $result = mysqli_fetch_all($query, MYSQLI_ASSOC);
                         <?php echo ($result[0]['negeri'] == 'negeri sembilan') ? 'selected' : '';?>>
                         negeri sembilan
                     </option>
+                    <option value="sabah"
+                        <?php echo ($result[0]['negeri'] == 'sabah') ? 'selected' : '';?>>
+                        sabah
+                    </option>
+                    <option value="sarawak"
+                        <?php echo ($result[0]['negeri'] == 'sarawak') ? 'selected' : '';?>>
+                        sarawak
+                    </option>
                 </select>
             </li>
             <!--  -->
