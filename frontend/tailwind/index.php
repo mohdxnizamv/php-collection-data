@@ -53,6 +53,9 @@ $results = mysqli_fetch_all($query, MYSQLI_ASSOC);
                             <td><?php echo $result['nama_oder'] ?> </td>
                             <td><?php echo $result['pesanan_oder'] ?> </td>
                             <td><?php echo $result['waktu_dibuat'] ?> </td>
+                            <td>
+                                <a href="delete.php?id=<?php echo $result['id'] ?>">hapus</a>
+                            </td>
                         </tr>
 
                     <?php endforeach; ?>

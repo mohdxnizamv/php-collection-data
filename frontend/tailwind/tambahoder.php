@@ -52,6 +52,7 @@
                         <!-- Bottom Buttons Container -->
                         <div class="my-1 grid grid-cols-1 gap-x-3 gap-y-3 py-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2">
                             <select name="nama_oder" class="flex items-center justify-center py-3 px-1.5 space-x-3 border-2 border-gray-300 rounded-lg shadow-sm hover:bg-opacity-30 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-150">
+
                                 <option value="nasi ayam">nasi ayam</option>
                                 <option value="nasi goreng ayam">n.goreng ayam</option>
                                 <option value="nasi goreng kampung">n.goreng kampung</option>
@@ -69,7 +70,7 @@
                             </select>
 
                             <select name="nombor_oder" class="flex items-center justify-center py-3 px-5 space-x-3 border-2 border-gray-300 rounded-lg shadow-sm hover:bg-opacity-30 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-150">
-                                <option value="null">null</option>
+
                                 <option value="001">001</option>
                                 <option value="002">002</option>
                                 <option value="003">003</option>
@@ -104,7 +105,7 @@
                             <!--  -->
 
                             <select name="pesanan_oder" class="flex items-center justify-center py-3 px-5 space-x-3 border-2 border-gray-300 rounded-lg shadow-sm hover:bg-opacity-30 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-150">
-                                <option value="null">null</option>
+                                <option value="tiada">tiada</option>
                                 <option value="ayam goreng">tambah ayam goreng</option>
                                 <option value="telur mata">telur mata</option>
                                 <option value="tambah nasi">tambah nasi</option>
@@ -121,6 +122,7 @@
                                 </div>
                             </button>
                         </div>
+                        <!--  -->
 
                     </div>
                 </div>
