@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Product Modal</title>
+    <title>ODER MAKANAN</title>
 </head>
 
 <body>
@@ -36,8 +36,8 @@
                         </div>
                         <!-- Price Container -->
                         <div class="flex flex-col mb-4 space-y-3 text-center md:text-left">
-                            <p class="line-through">RM 11</p>
-                            <p class="text-5xl font-bold">RM 9</p>
+                            <p class="line-through">RM 11.00</p>
+                            <p class="text-5xl font-bold">RM 9.00</p>
                             <p class="text-sm font-light text-gray-400">
                                 This offer is valid until April 3rd !
                             </p>
@@ -50,7 +50,7 @@
                         </div>
 
                         <!-- Bottom Buttons Container -->
-                        <div class="flex flex-col space-y-4 md:space-y-0 md:space-x-4 md:flex-row">
+                        <div class="my-1 grid grid-cols-1 gap-x-3 gap-y-3 py-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2">
                             <select name="nama_oder" class="flex items-center justify-center py-3 px-1.5 space-x-3 border-2 border-gray-300 rounded-lg shadow-sm hover:bg-opacity-30 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-150">
                                 <option value="nasi ayam">nasi ayam</option>
                                 <option value="nasi goreng ayam">n.goreng ayam</option>
@@ -69,20 +69,47 @@
                             </select>
 
                             <select name="nombor_oder" class="flex items-center justify-center py-3 px-5 space-x-3 border-2 border-gray-300 rounded-lg shadow-sm hover:bg-opacity-30 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-150">
+                                <option value="null">null</option>
                                 <option value="001">001</option>
                                 <option value="002">002</option>
                                 <option value="003">003</option>
                                 <option value="004">004</option>
                                 <option value="005">005</option>
                                 <option value="006">006</option>
-                                <option value="007">007</option>
-                                <span>Add to wishlist</span>
+                                <option value="008">008</option>
+                                <option value="009">009</option>
+                                <option value="010">010</option>
+                                <option value="011">011</option>
+                                <option value="012">012</option>
+                                <option value="013">013</option>
+                                <option value="014">014</option>
+                                <option value="015">015</option>
+                                <option value="016">016</option>
+                                <option value="017">017</option>
+                                <option value="018">018</option>
+                                <option value="019">019</option>
+                                <option value="020">020</option>
+                                <option value="021">021</option>
+                                <option value="022">022</option>
+                                <option value="023">023</option>
+                                <option value="024">024</option>
+                                <option value="025">025</option>
+                                <option value="026">026</option>
+                                <option value="027">027</option>
+                                <option value="028">028</option>
+                                <option value="029">029</option>
+                                <option value="030">030</option>
+                                <span>Add to cart</span>
                             </select>
-                        </div>
-                        <!--  -->
-                        
-                        <div>
-                            <input name="pesanan_oder" class="w-full flex-1 appearance-none rounded-lg border border-gray-300 bg-white px-4 py-6 text-base text-gray-800 placeholder-gray-400 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600" rows="5" cols="100" placeholder="your-information">
+                            <!--  -->
+
+                            <select name="pesanan_oder" class="flex items-center justify-center py-3 px-5 space-x-3 border-2 border-gray-300 rounded-lg shadow-sm hover:bg-opacity-30 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-150">
+                                <option value="null">null</option>
+                                <option value="ayam goreng">tambah ayam goreng</option>
+                                <option value="telur mata">telur mata</option>
+                                <option value="tambah nasi">tambah nasi</option>
+                                <span>Add to cart</span>
+                            </select>
                         </div>
                         <!--  -->
 

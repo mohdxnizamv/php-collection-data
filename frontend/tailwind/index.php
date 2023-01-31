@@ -20,7 +20,7 @@ $results = mysqli_fetch_all($query, MYSQLI_ASSOC);
 </head>
 
 <body>
-    <div class="container mx-auto max-w-3xl px-4 sm:px-2">
+    <div class="container mx-auto max-w-6xl px-4 sm:px-2">
         <div class="py-8">
             <div class="overflow-x-auto px-4 py-4">
                 <div class="inline-block min-w-full overflow-hidden rounded-lg shadow-lg">
@@ -37,6 +37,9 @@ $results = mysqli_fetch_all($query, MYSQLI_ASSOC);
                                 <th scope="col" class="border-b border-gray-200 px-5 py-3 text-base font-bold uppercase text-gray-800">
                                     Pesanan Tambahan
                                 </th>
+                                <th scope="col" class="border-b border-gray-200 px-5 py-3 text-base font-bold uppercase text-gray-800">
+                                    Masa Oder
+                                </th>
 
                             </tr>
 
@@ -49,7 +52,7 @@ $results = mysqli_fetch_all($query, MYSQLI_ASSOC);
                             <td><?php echo $result['nombor_oder'] ?> </td>
                             <td><?php echo $result['nama_oder'] ?> </td>
                             <td><?php echo $result['pesanan_oder'] ?> </td>
-
+                            <td><?php echo $result['waktu_dibuat'] ?> </td>
                         </tr>
 
                     <?php endforeach; ?>
