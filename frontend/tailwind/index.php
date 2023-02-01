@@ -6,15 +6,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+        }
+    </script>
+    <style>
+        .toggle-checkbox:checked {
+            right: 0;
+            border-color: #68d391;
+        }
+
+        .toggle-checkbox:checked+.toggle-label {
+            background: #68d391;
+        }
+    </style>
     <title>ODER MAKANAN</title>
 </head>
 
 <body>
     <form action="insert.php" method="post">
+
+        <nav class="bg-slate-100 dark:bg-slate-900 dark:text-white p-2">
+            <div class="container mx-auto flex items-center justify-between">
+                <div class="font-bold text-lg">Restoran Maidin</div>
+                <div class="flex items-center space-x-3">
+                    <a href="viewcards.php" class="hover:text-gray-300">View Oder</a>
+                    <a href="list.php" class="hover:text-gray-300">List Oder</a>
+                    <a href="#" class="hover:text-gray-300">Contact</a>
+
+                    <span class="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
+                        <input type="checkbox" name="toggle" id="toggle" class="peer absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer checked:right-0 checked:border-green-500" />
+
+                        <label for="toggle" class="block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer peer-checked:bg-green-500"></label>
+                    </span>
+                </div>
+            </div>
+        </nav>
+
         <!-- Global Container -->
-        <div class="flex items-center justify-center min-h-screen bg-slate-100">
+        <div class="flex items-center justify-center min-h-screen dark:bg-slate-900 dark:text-white bg-slate-100">
             <!-- Card Container -->
-            <div class="flex flex-col p-6 m-3 space-y-10 bg-white rounded-2xl shadow-2xl md:flex-row md:space-y-0 md:space-x-10 md:m-0 md:p-16">
+            <div class="flex flex-col p-6 m-3 space-y-10 dark:text-white dark:bg-slate-800 rounded-2xl shadow-2xl md:flex-row md:space-y-0 md:space-x-10 md:m-0 md:p-16">
                 <!-- Image Div -->
                 <div>
                     <img src="./images/example 1.png" alt="#" class="mx-auto rounded-3xl duration-200 w-auto p-1 hover:scale-105" />
@@ -50,7 +83,7 @@
                         </div>
 
                         <!-- Bottom Buttons Container -->
-                        <div class="my-1 grid grid-cols-1 gap-x-3 gap-y-3 py-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 font-semibold">
+                        <div class="my-1 grid grid-cols-1 gap-x-3 gap-y-3 py-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 font-semibold dark:text-black">
                             <select name="nama_oder" class="flex items-center justify-center py-3 px-5 space-x-3 border-2 border-gray-300 rounded-lg shadow-sm hover:bg-opacity-30 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-150">
 
                                 <option value="nasi ayam">nasi ayam</option>
@@ -134,7 +167,16 @@
             </div>
         </div>
     </form>
-    <a href="viewcards.php" class="text-gray-400">view oder</a>
+    <script>
+        document.getElementById('toggle').addEventListener('change', function() {
+            if (this.checked) {
+                document.documentElement.classList.add('dark')
+            } else {
+                document.documentElement.classList.remove('dark')
+            }
+
+        })
+    </script>
 </body>
 
 </html>

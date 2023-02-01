@@ -16,17 +16,50 @@ $results = mysqli_fetch_all($query, MYSQLI_ASSOC);
   <meta http-equiv="refresh" content="20" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+    }
+  </script>
+  <style>
+    .toggle-checkbox:checked {
+      right: 0;
+      border-color: #68d391;
+    }
+
+    .toggle-checkbox:checked+.toggle-label {
+      background: #68d391;
+    }
+  </style>
   <title>Restoran | View Card</title>
 </head>
 
 <body>
-  <section>
+
+  <nav class="bg-slate-100 dark:bg-slate-900 dark:text-white p-4">
+    <div class="container mx-auto flex items-center justify-between">
+      <div class="font-bold text-lg">Restoran Maidin</div>
+      <div class="flex items-center space-x-3">
+        <a href="index.php" class="hover:text-gray-300">Home</a>
+        <a href="#" class="hover:text-gray-300">About</a>
+        <a href="#" class="hover:text-gray-300">Contact</a>
+
+        <span class="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
+          <input type="checkbox" name="toggle" id="toggle" class="peer absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer checked:right-0 checked:border-green-500" />
+
+          <label for="toggle" class="block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer peer-checked:bg-green-500"></label>
+        </span>
+      </div>
+    </div>
+  </nav>
+
+  <section class="bg-slate-100 dark:bg-slate-900 dark:text-white">
     <div class="container mx-auto max-w-6xl px-4 sm:px-2">
       <div class="flex flex-wrap -mx-3">
         <?php foreach ($results as $result) : ?>
           <div class="w-1/3 px-3 mb-6">
-            <div class="bg-white rounded shadow p-6">
-              <img class="w-full" src="https://via.placeholder.com/300x200" alt="Card Image">
+            <div class="bg-white dark:bg-slate-800 rounded shadow p-6">
+              <img class="w-full rounded" src="images/nasi-goreng.png" alt="Card Image">
               <div class="pt-4">
                 <h3 class="text-lg font-medium leading-tight underline"><?php echo $result['nama_oder'] ?></h3>
                 <p class="text-gray-600 text-base mt-2">
@@ -47,9 +80,20 @@ $results = mysqli_fetch_all($query, MYSQLI_ASSOC);
         <!-- 
           Add more cards here 
         -->
+
       </div>
     </div>
   </section>
+  <script>
+    document.getElementById('toggle').addEventListener('change', function() {
+      if (this.checked) {
+        document.documentElement.classList.add('dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
+
+    })
+  </script>
 </body>
 
 </html>
