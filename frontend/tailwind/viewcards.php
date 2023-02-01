@@ -13,10 +13,10 @@ $results = mysqli_fetch_all($query, MYSQLI_ASSOC);
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta http-equiv="refresh" content="6" />
+  <meta http-equiv="refresh" content="20" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <title>Restoran Makan Perimbun</title>
+  <title>Restoran | View Card</title>
 </head>
 
 <body>
@@ -28,17 +28,17 @@ $results = mysqli_fetch_all($query, MYSQLI_ASSOC);
             <div class="bg-white rounded shadow p-6">
               <img class="w-full" src="https://via.placeholder.com/300x200" alt="Card Image">
               <div class="pt-4">
-                <h3 class="text-lg font-medium leading-tight"><?php echo $result['nama_oder'] ?></h3>
+                <h3 class="text-lg font-medium leading-tight underline"><?php echo $result['nama_oder'] ?></h3>
                 <p class="text-gray-600 text-base mt-2">
                   Card description goes here. Lorem ipsum dolor sit amet, consectetur
                   adipiscing elit.
                 </p>
               </div>
-              <div class="pt-4">
-                <span class="inline-block bg-gray-200 rounded-full px-1.5 py-1 text-xs text-gray-700 mr-2"><?php echo $result['nombor_oder'] ?></span>
-                <span class="inline-block bg-gray-200 rounded-full px-1.5 py-1 text-xs text-gray-700 mr-2"><?php echo $result['nama_oder'] ?></span>
-                <span class="inline-block bg-gray-200 rounded-full px-1.5 py-1 text-xs text-gray-700"><?php echo $result['pesanan_oder'] ?></span>
-                <span class="inline-block bg-gray-200 rounded-full px-1.5 py-1 text-xs text-gray-700"><?php echo $result['waktu_dibuat'] ?></span>
+              <div class="my-1 grid grid-cols-3 gap-x-3 gap-y-3 py-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3">
+                <span class="bg-gray-200 rounded-lg text-xs text-gray-700 text-center">ID : <?php echo $result['id'] ?></span>
+                <span class="bg-gray-200 rounded-lg text-xs text-gray-700 text-center">No Oder : <?php echo $result['nombor_oder'] ?></span>
+                <span class="bg-gray-200 rounded-lg text-xs text-gray-700 text-center"><?php echo $result['pesanan_oder'] ?></span>
+                <span class="bg-blue-200 rounded-lg text-xs text-gray-700 text-center py-1 font-bold"><a href="delete.php?id=<?php echo $result['id'] ?>">hapus</a></span>
               </div>
             </div>
           </div>
