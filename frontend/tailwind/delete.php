@@ -7,6 +7,6 @@ $id = $_GET['id'];
 $delete = mysqli_query($connect, "DELETE FROM makanoder WHERE id='$id'");
 
 if ($delete)
-    header('Location:viewcards.php');
+    header('Location:list.php');
 else
     echo 'Delete data gagal';

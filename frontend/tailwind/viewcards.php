@@ -13,7 +13,7 @@ $results = mysqli_fetch_all($query, MYSQLI_ASSOC);
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta http-equiv="refresh" content="20" />
+  <meta http-equiv="refresh" content="60" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -34,14 +34,14 @@ $results = mysqli_fetch_all($query, MYSQLI_ASSOC);
   <title>Restoran | View Card</title>
 </head>
 
-<body>
+<body class="bg-slate-100 dark:bg-slate-900 dark:text-white">
 
-  <nav class="bg-slate-100 dark:bg-slate-900 dark:text-white p-4">
+  <nav class="p-4">
     <div class="container mx-auto flex items-center justify-between">
       <div class="font-bold text-lg">Restoran Maidin</div>
       <div class="flex items-center space-x-3">
         <a href="index.php" class="hover:text-gray-300">Home</a>
-        <a href="#" class="hover:text-gray-300">About</a>
+        <a href="list.php" class="hover:text-gray-300">View List</a>
         <a href="#" class="hover:text-gray-300">Contact</a>
 
         <span class="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
